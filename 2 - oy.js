@@ -11,11 +11,8 @@ console.log(charroomStatus(['nima', 'gap']));
 console.log(charroomStatus(['what', 'are', 'you', 'doing']));*/
 
 // homework 22
-/*let matchHouse = (num) => {
-    if (num == 1) return num * 6
-    else return (num * 6) - (num - 1)
-}
-console.log(matchHouse(4));*/
+/*let matchHouse = (num) => {console.log(num == 1 ? num * 6 : (num * 6) - (num - 1))}
+matchHouse(4)*/
 
 // homework 22
 /*function calculator(num1, amal, num2) {
@@ -81,7 +78,6 @@ console.log(solve('43 + x = 50'));*/
     return result
 }
 console.log(Distance({ x1: 0, y1: 0 }, { x2: 1, y2: 1 }));*/
-
 
 
 
