@@ -79,8 +79,44 @@ console.log(solve('43 + x = 50'));*/
 }
 console.log(Distance({ x1: 0, y1: 0 }, { x2: 1, y2: 1 }));*/
 
+// homework 23
+/*let sumOfCubes = (arr) => {let sum = 0; arr.forEach(element => {sum += (element ** 3)}); console.log(sum);}
+sumOfCubes([1, 5, 9])*/
 
+// homework 23
+/*let equalSlices = (num1, num2, num3) => num1 >= (num2 * num3) ? true : false
+console.log(equalSlices(11, 5, 3));*/
 
+// homework 23
+/*function digitalClock(num) {
+    let oclock = 0
+    let min = 0
+    while (num >= 3600) {
+        num -= 3600
+        oclock++
+    }
+    while (num >= 60) {
+        num -= 60
+        min++
+    }
+    let sec = num
+    if (oclock < 10) oclock = '0' + oclock
+    if (min < 10) min = '0' + min
+    if (sec < 10) sec = '0' + sec
+    if (oclock >= 24) {
+        if (oclock === 24) console.log(`00:${min}:${sec}`);
+        if (oclock > 24) {
+            oclock -= 24
+            if (oclock < 10) console.log(`0${oclock}:${min}:${sec}`);
+        }
+    }
+    else console.log(`${oclock}:${min}:${sec}`);
+}
+digitalClock(5025)
+digitalClock(61201)
+digitalClock(87000)*/
+
+// homework 23
 
 
 
