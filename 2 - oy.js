@@ -117,7 +117,22 @@ digitalClock(61201)
 digitalClock(87000)*/
 
 // homework 23
+/*function numLayers(num) {
+    let mm = 0.0005
+    while (num > 0) {
+        num--
+        mm = mm * 2
+        console.log(mm);
+    }
+    return mm
+}
+console.log(numLayers(21));*/
 
+// homework 23
+/*let posCom = (num) => num * 2
+console.log(posCom(3));*/
+
+// homework 24
 
 
 
