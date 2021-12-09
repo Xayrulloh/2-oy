@@ -135,10 +135,43 @@ console.log(posCom(3));*/
 // homework 24
 
 
+// repetition 1
+/*let sum = (num) => {
+    let summ = 0
+    while (num > 0) {
+        summ += num % 10
+        num = Math.floor(num / 10)
+    }
+    console.log(summ);
+}
+sum(12345)*/
 
+// repetition 2
+/*function func(nums, sum=''+nums, res=0, count=0) {
+    if (sum.length == count) return res
+    res += +sum[count]
+    return func(nums, sum, res, ++count)
+}
+console.log(func(12345));*/
 
+// repetition 3
+/*let foiz = (num1, num2) => num1 - ((((num1 / num2) | 0) * num2))
+console.log(foiz(5, 2));*/
 
+// repetition 4 
+/*function kopaytirish(num1, num2, sum=0) {
+    if (num2 == 0) return sum
+    return kopaytirish(num1, num2-1, sum+=num1)
+}
+console.log(kopaytirish(5, 5));*/
 
+// repetition 5
+/*function factorial (num, sum = 1) {
+    if (num == 1) return sum
+    sum = sum * num
+    return factorial(--num, sum)
+}
+console.log(factorial(5));*/
 
 
 
