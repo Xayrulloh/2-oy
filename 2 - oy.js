@@ -173,8 +173,21 @@ console.log(kopaytirish(5, 5));*/
 }
 console.log(factorial(5));*/
 
-
-
+// ants little project
+function output(str) {
+    let item = ''
+    for (let a = 0; a < str.length; a++) {
+        item = str.replace(a, '.')
+        console.log(item);
+    }
+}
+output('>...')
+// let text = "Visit Microsoft!";
+// let result = text.replace(0, "W3Schools");
+// console.log(result);
+// let rightSide = 0
+// let leftSide = 0
+// let point = 0
 
 
 
