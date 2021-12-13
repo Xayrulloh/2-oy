@@ -174,21 +174,24 @@ console.log(kopaytirish(5, 5));*/
 console.log(factorial(5));*/
 
 // ants little project
-function output(str) {
-    let item = ''
-    for (let a = 0; a < str.length; a++) {
-        item = str.replace(a, '.')
-        console.log(item);
+// function output(str) {
+//     let item = ''
+//     for (let a = 0; a < str.length; a++) {
+//         item = str.replace(a, '.')
+//         console.log(item);
+//     }
+// }
+// output('>...')
+
+// 13.12) exercise1
+/*function sortby0(arr) {
+    for (let a = arr.length; a >= 0; a--) {
+        if (arr[a] == 0) {
+            arr.splice(a, 1)
+            arr.push(0)
+        }
     }
+    return arr
 }
-output('>...')
-// let text = "Visit Microsoft!";
-// let result = text.replace(0, "W3Schools");
-// console.log(result);
-// let rightSide = 0
-// let leftSide = 0
-// let point = 0
-
-
-
+console.log(sortby0([0, 1, 6, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 98]));*/
 
