@@ -183,7 +183,7 @@ console.log(factorial(5));*/
 // }
 // output('>...')
 
-// 13.12) exercise1
+// 13.12) exercise 1
 /*function sortby0(arr) {
     for (let a = arr.length; a >= 0; a--) {
         if (arr[a] == 0) {
@@ -194,4 +194,63 @@ console.log(factorial(5));*/
     return arr
 }
 console.log(sortby0([0, 1, 6, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 98]));*/
+
+
+// 14.12) exercise 1 
+/*let arr = [
+    {name: 'ahror', age: 22, gender: 1},
+    {name: 'ahror', age: 22, gender: 1, devs: 'javascript'},
+    {name: 'alisher', age: 17, gender: 1},
+    {name: 'bobir', age: 32, gender: 1},
+    {name: 'salim', age: 22, gender: 1},
+    {name: 'aliy', age: 21, gender: 1},
+]
+function filter(arr, object) {
+    let result = []
+    for (let user of arr) {
+        let count = 0
+        for (let key in object) {
+            if (user[key] == object[key]) count++
+        }
+        if (Object.keys(object).length == count) result.push(user)
+    }
+    return result
+}
+console.log(filter(arr, {name: 'ahror', age: 22}));*/
+
+// 14.12) exercise 2
+/*function reverse(arr) {
+    let result = []
+    let str = ''
+    for (const a of arr) {
+        for (let b = a.length - 1; b >= 0; b--) {
+            str += a[b]
+        }
+        result.push(str)
+        str = ''
+    }
+    console.log(result);
+} 
+reverse(['olma', 'gilos', 'shaftoli'])*/
+
+// 14.12) exercise 3
+/*function zero(num) {
+    let result = []
+    let count = 1
+    if (num % 2 == 0) {
+        while (result.length < num) {
+            result.push(count, -count)
+            count++
+        }
+    }
+    else {
+        while (result.length < num - 1) {
+            result.push(count, -count)
+            count++
+        }
+        result.push(0)
+    }
+    return result
+}
+console.log(zero(5));*/
 
