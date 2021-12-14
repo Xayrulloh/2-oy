@@ -254,3 +254,9 @@ reverse(['olma', 'gilos', 'shaftoli'])*/
 }
 console.log(zero(5));*/
 
+
+
+
+
+
+
