@@ -1,3 +1,4 @@
+"use strict"
 // homework 22
 /*function charroomStatus(arr) {
     if (!arr.length) return 'no one online'
@@ -253,6 +254,49 @@ reverse(['olma', 'gilos', 'shaftoli'])*/
     return result
 }
 console.log(zero(5));*/
+
+// 15.12) class lesson
+// laptop qancha tezlida ishlashi 
+/*console.time();
+for (let a = 0; a < 100000; a++) {
+    let square = a ** 2
+}
+console.timeEnd();*/
+
+// oxirgi hisoblolidigan soni
+/*console.log(Number.MIN_SAFE_INTEGER);*/
+
+// 10 diwi orniga . qoysa boladi
+/*let x = .3 - .2
+let y = .2 - .1
+console.log(x === y);*/
+
+// string method repetition
+/*let s = "what is your name"
+console.log(s.startsWith("wh"));
+console.log(s.endsWith("me"));*/
+
+// 15.12) exercise 1
+/*function count(str) {
+    let obj = {}
+    for (const a of str) {
+        let key = a
+        if (!obj[key]) {
+            obj[key] = 1
+        }else obj[key] += 1
+    }
+    return obj
+}
+console.log(count('hello'));*/
+
+
+
+
+
+
+
+
+
 
 
 
