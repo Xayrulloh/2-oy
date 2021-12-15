@@ -289,10 +289,33 @@ console.log(s.endsWith("me"));*/
 }
 console.log(count('hello'));*/
 
+// 15.12) homework 1
+/*function containsDuplicate(nums) {
+    let obj = {}
+    for (const a of nums) {
+        let key = a
+        if (!obj[key]) obj[key] = a
+        else return false
+    }
+    return true
+}
+console.log(containsDuplicate([1,2,3,1]));
+console.log(containsDuplicate([1,2,3,4]));*/
 
-
-
-
+// 15.12) homework 2
+function findDuplicates(nums) {
+    let obj = {}
+    let arr = []
+    for (const a of nums) {
+        let key = a
+        if (!obj[key]) obj[key] = a
+        else if (!arr.includes(a)) arr.push(a)
+    }
+    return arr
+}
+console.log(findDuplicates([4,3,2,7,8,2,3,1,2,3]));
+console.log(findDuplicates([1,1,2]));
+console.log(findDuplicates([4,5,4,1,2,6]));
 
 
 
