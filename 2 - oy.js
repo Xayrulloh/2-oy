@@ -303,7 +303,7 @@ console.log(containsDuplicate([1,2,3,1]));
 console.log(containsDuplicate([1,2,3,4]));*/
 
 // 15.12) homework 2
-function findDuplicates(nums) {
+/*function findDuplicates(nums) {
     let obj = {}
     let arr = []
     for (const a of nums) {
@@ -315,7 +315,14 @@ function findDuplicates(nums) {
 }
 console.log(findDuplicates([4,3,2,7,8,2,3,1,2,3]));
 console.log(findDuplicates([1,1,2]));
-console.log(findDuplicates([4,5,4,1,2,6]));
+console.log(findDuplicates([4,5,4,1,2,6]));*/
+
+// 16.12) homework 1
+/*let index = (arr, num) => {for (let a = 0; a < arr.length; a++) {if (arr[a] === num) console.log(a)}}
+index([1, 2, 3, 4, 5, 6, 7], 5)*/
+
+
+
 
 
 
