@@ -319,13 +319,49 @@ console.log(findDuplicates([4,5,4,1,2,6]));*/
 /*let index = (arr, num) => {for (let a = 0; a < arr.length; a++) {if (arr[a] === num) console.log(a)}}
 index([1, 2, 3, 4, 5, 6, 7], 5)*/
 
+// 16.12) homework 1
+/*function digitalClipher(message, key) {
+    let res = []
+    const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+    key = key.toString()
+    for (let a = 0, b = 0; a < message.length; a++, b++) {
+        if(b > key.length - 1) b = 0
+        res.push(alphabet.indexOf(message[a]) + 1 + (+key[b]))
+    }
+    return res
+}
+console.log(digitalClipher('scout', 19391));
+console.log(digitalClipher('masterpiece', 1939));
+console.log(digitalClipher('edabit', 100));*/
 
+// 16.12) homework 2
+/*function sort(arr) {
+    let item = 0
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = 0; b < arr.length; b++) {
+            if (arr[a] < arr[b]) {
+                item = arr[a]
+                arr[a] = arr[b]
+                arr[b] = item
+            }
+        }
+    }
+    return arr
+}
+console.log(sort([2, -5, 1, 4, 7, 8]));
+console.log(sort([23, 15, 34, 17, -28]));
+console.log(sort([38, 57, 45, 18, 47, 39]));*/
 
-
-
-
-
-
+// 16.12) homework 3
+/*function convert(str) {
+    if (str.length < 4) return 'Are you idiot or stupid choose one of this C or F'
+    let half = str.slice(0, 2)
+    if (str[3] == "C") return `${half * 9/5 + 32}*F`
+    if (str[3] == 'F') return `${Math.round((half - 32) * 5/9)}*C`
+}
+console.log(convert('35*C'));
+console.log(convert('19*F'));
+console.log(convert('35'));*/
 
 
 
