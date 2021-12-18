@@ -363,8 +363,49 @@ console.log(convert('35*C'));
 console.log(convert('19*F'));
 console.log(convert('35'));*/
 
+// 18.12) classwork 1
+/*let full = (num, str) => new Array(num).fill(str)
+console.log(full(3, 'a'));*/
 
+// 18.12) classwork 2
+/*let rev = (arr) => arr.reverse()
+console.log(rev([1, 2, 3]));*/
 
+// 18.12) classwork 3
+/*let check = (arr) => arr.filter((a) => {if (a) return a})
+console.log(check([0, 1, 2, 3, null, undefined, false]));*/
+
+// 18.12) classwork 4
+/*function toobject(arr) {
+    let obj = arr.reduce((acumlator, value) => acumlator[value[0]]  = value[1])
+    return obj
+}
+console.log(toobject([['b', 2], ['a', 4]]));*/
+
+// 18.12) classwork 5
+/*let siz = (arr, ...num) => arr.filter((v) => !num.inculdes(v))
+console.log(siz([1, 2, 3, 4, 5, 6, 7], 1, 2));*/
+
+// 18.12) classwork 6
+/*let unique = (arr) => Array.from(new Set(arr))
+console.log(unique([1, 2, 1, 2, 5]));*/
+
+// 18.12) classwork 7
+/*let isEqual = (arr1, arr2) => arr1.toString() === arr2.toString()
+console.log(isEqual([1, 2, 3], [1, 2, 3]));*/
+
+// 18.12) classwork 8
+/*function Flatten(arr) {
+    let newarr = []
+    arr = arr.toString()
+    for (const a of arr) {
+        if (a == Number(a)) newarr.push(Number(a))
+    }
+    return newarr
+}
+console.log(Flatten([[1, 2], [3, 4]]));*/
+
+// 18.12) classwork 9
 
 
 
