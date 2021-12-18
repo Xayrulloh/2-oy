@@ -1,4 +1,29 @@
 "use strict"
+// 18.12) practice 2
+Array.prototype.sum = function() {
+    let res = 0
+    for (let a = 0; a < this.length; a++) {
+        res += this[a]
+    }
+    return res
+}
+
+// 18.12) practice 3
+/*Array.prototype.mypush = function(a) {
+    this[this.length] = a
+    return this
+}
+console.log([1, 2].mypush(3));*/
+
+// 18.12) practice 4
+/*Array.prototype.mypop = function() {
+    let res = this[this.length - 1]
+    this.length -= 1
+    return res
+}
+console.log([1, 2, 3, 4].pop());
+console.log([1, 2, 3, 4].mypop());*/
+
 // homework 22
 /*function charroomStatus(arr) {
     if (!arr.length) return 'no one online'
@@ -405,7 +430,23 @@ console.log(isEqual([1, 2, 3], [1, 2, 3]));*/
 }
 console.log(Flatten([[1, 2], [3, 4]]));*/
 
-// 18.12) classwork 9
+// 18.12) practice 1
+/*function prosta(arr) {
+    let sum = 0
+    let x = arr.map(el => sum += el)
+    return x
+}
+console.log(prosta([1, 2, 3, 4, 5]));*/
+
+
+
+
+
+
+
+
+
+
 
 
 
