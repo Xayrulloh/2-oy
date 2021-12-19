@@ -438,8 +438,36 @@ console.log(Flatten([[1, 2], [3, 4]]));*/
 }
 console.log(prosta([1, 2, 3, 4, 5]));*/
 
+// 18.12) homework 1
+/*function factorChain(arr) {
+    for (let a = 1; a < arr.length; a++) {
+        if (arr[a] % arr[a - 1] != 0) return false
+    }
+    return true
+}
+console.log(factorChain([1, 2, 4, 8, 16, 32]));
+console.log(factorChain([1, 1, 1, 1, 1, 1]));
+console.log(factorChain([2, 4, 6, 7, 12]));
+console.log(factorChain([10, 1]));*/
 
+// 18.12) homework 2
+/*function removeDubs(arr) {
+    arr = new Set(arr)
+    arr = Array.from(arr)
+    return arr
+}
+console.log(removeDubs([1, 0, 1, 0]));
+console.log(removeDubs(["The", 'big', 'cat']));
+console.log(removeDubs(['John', 'Taylor', 'John']));*/
 
+// 18.12) homework 3
+/*function miror(arr) {
+    let newarr = arr.slice(0, arr.length - 1).reverse()
+    return arr.concat(newarr)
+}
+console.log(miror([0, 2, 4, 6]));
+console.log(miror([1, 2, 3, 4, 5]));
+console.log(miror([3, 5, 6, 7, 8]));*/
 
 
 
