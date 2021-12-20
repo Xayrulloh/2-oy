@@ -469,6 +469,114 @@ console.log(miror([0, 2, 4, 6]));
 console.log(miror([1, 2, 3, 4, 5]));
 console.log(miror([3, 5, 6, 7, 8]));*/
 
+// 20.12) classwork 1
+/*function what(arr) {
+    return Array.isArray(arr) 
+}
+console.log(what([1, 2, 3]));*/
+
+// 20.12) classwork 2
+/*function what(arr, num) {
+    if (!arr) return []
+    if (num > 0) return arr.splice(0, num)
+    else return arr.splice(arr.length + num)
+}
+console.log(what([], -3));*/
+
+// 20.12) classwork 3
+/*function str(arr) {
+    return arr.join('+')
+}
+console.log(str(['Tom', 'John']));*/
+
+// 20.12) classwork 3
+/*function what(str) {
+    let newstr = ''
+    for (let a = 0; a < str.length; a++) {
+        newstr += str[a]
+        if (Number(str[a]) % 2 == 0 && Number(str[a + 1]) % 2 == 0) newstr += '-'
+    }
+    return newstr
+}
+console.log(what('010101'));*/
+
+// 20.12) classwork 4
+/*function what(arr) {
+    return arr.sort()
+}
+console.log(what([5, 7, 8, 4, 2]));*/
+
+// 20.12) classwork 5
+/*function bigsort(arr, num) {
+    let res = []
+    for (let a = 0; a < arr.length; a += num) {
+        res.push(...arr.slice(a, a + num).sort((a, b) => a-b))
+    }
+    return res
+}
+console.log(bigsort([4, 5, 8, 2, 3, 6, 7, 1, 9], 3));*/
+
+// 20.12) classwork 6
+/*function mostRepeated(arr) {
+    let count = 0
+    let max = 0
+    let res = ''
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = 0; b < arr.length; b++) {
+            if (arr[a] == arr[b]) count++
+        }
+        if (max < count) {
+            max = count
+            res = arr[a]
+        }
+        count = 0
+    }
+    return max
+}
+console.log(mostRepeated(['a', 1, 2, 3, 'a', 'a']));*/
+
+// 20.12) classwork 7
+/*function big(str) {
+    str = str.toLowerCase()
+    str = str.split(' ')
+    let res = ''
+    for (let a = 0; a < str.length; a++) {
+        res += str[a][0].toUpperCase() + str[a].slice(1)
+        res += ' '
+    }
+    return res.slice(0, -1)
+}
+console.log(big('This Is hoMe worK'));*/
+
+// 20.12) classwork 8
+/*function what(arr) {
+    for (let a = 0; a < arr.length; a++) {
+        console.log(`row${a}:`);
+        for (let b = 0; b < arr[a].length; b++) {
+            console.log(arr[a][b]);
+        }
+    }
+}
+what([[1, 2, 3], [4, 5, 6]])*/
+
+// 20.12) classwork 9
+/*function what(arr) {
+    let summ = arr.sum()
+    let product = arr.reduce((a, b) => a * b)
+    console.log({summ : summ, product : product});
+}
+what([1, 2, 3])*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
