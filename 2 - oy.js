@@ -567,8 +567,38 @@ what([[1, 2, 3], [4, 5, 6]])*/
 }
 what([1, 2, 3])*/
 
+// 20.12) homework 1
+/*function open(arr) {
+    let res = []
+    arr.forEach(rev)
+    function rev(element) {
+        if (Array.isArray(element)) {
+            return element.forEach(rev);
+         }
+         return res.push(element);
+    }
+    return res
+}
+console.log(open([ 1, 2, [1, 2], [3, 4], [5, 6], [7, 8, [1, 2, 3, [4, 5]]]]));*/
 
-
+// 20.12) homework 2
+/*function show(arr){ 
+    let answer = {}
+    const sum = {};
+    let n = 0
+    for (const num of arr) {
+      sum[num] = sum[num] ? sum[num] + 1 : 1;
+    }
+    for(let key in sum){
+        if(sum[key] > n){
+            answer = {}
+            answer[key] = sum[key]
+            n = sum[key]
+        }
+    }
+    return answer
+}
+console.log(show([7, 8, 7, 8, 7, 84, 5, 4, 5, 1, 2, 1, 5, 7, 9, 5, 4, 84]));*/
 
 
 
