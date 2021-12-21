@@ -184,7 +184,7 @@ console.log(func(12345));*/
 /*let foiz = (num1, num2) => num1 - ((((num1 / num2) | 0) * num2))
 console.log(foiz(5, 2));*/
 
-// repetition 4 
+// repetition 4
 /*function kopaytirish(num1, num2, sum=0) {
     if (num2 == 0) return sum
     return kopaytirish(num1, num2-1, sum+=num1)
@@ -222,7 +222,7 @@ console.log(factorial(5));*/
 console.log(sortby0([0, 1, 6, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 98]));*/
 
 
-// 14.12) exercise 1 
+// 14.12) exercise 1
 /*let arr = [
     {name: 'ahror', age: 22, gender: 1},
     {name: 'ahror', age: 22, gender: 1, devs: 'javascript'},
@@ -256,7 +256,7 @@ console.log(filter(arr, {name: 'ahror', age: 22}));*/
         str = ''
     }
     console.log(result);
-} 
+}
 reverse(['olma', 'gilos', 'shaftoli'])*/
 
 // 14.12) exercise 3
@@ -281,7 +281,7 @@ reverse(['olma', 'gilos', 'shaftoli'])*/
 console.log(zero(5));*/
 
 // 15.12) class lesson
-// laptop qancha tezlida ishlashi 
+// laptop qancha tezlida ishlashi
 /*console.time();
 for (let a = 0; a < 100000; a++) {
     let square = a ** 2
@@ -471,7 +471,7 @@ console.log(miror([3, 5, 6, 7, 8]));*/
 
 // 20.12) classwork 1
 /*function what(arr) {
-    return Array.isArray(arr) 
+    return Array.isArray(arr)
 }
 console.log(what([1, 2, 3]));*/
 
@@ -573,6 +573,7 @@ what([1, 2, 3])*/
     arr.forEach(rev)
     function rev(element) {
         if (Array.isArray(element)) {
+            console.log(element);
             return element.forEach(rev);
          }
          return res.push(element);
@@ -582,7 +583,7 @@ what([1, 2, 3])*/
 console.log(open([ 1, 2, [1, 2], [3, 4], [5, 6], [7, 8, [1, 2, 3, [4, 5]]]]));*/
 
 // 20.12) homework 2
-/*function show(arr){ 
+/*function show(arr){
     let answer = {}
     const sum = {};
     let n = 0
@@ -600,7 +601,37 @@ console.log(open([ 1, 2, [1, 2], [3, 4], [5, 6], [7, 8, [1, 2, 3, [4, 5]]]]));*/
 }
 console.log(show([7, 8, 7, 8, 7, 84, 5, 4, 5, 1, 2, 1, 5, 7, 9, 5, 4, 84]));*/
 
+// 20.12) classwork 1
+/*let sortby0index = (str) => str.split(' ').sort((a, b) => a[0] > b[0] ? 1 : -1).join(' ').replace(/\d+/g, '')
+console.log(sortby0index('3end 1This 2is'));*/
 
+// 20.12) classwork 2
+/*function add(arr1, arr2) {
+    if (arr1.length > arr2.length) {
+        for (let a = 0; a < arr2.length; a++) {
+            arr1[a] += arr2[a]
+        }
+    }
+    else {
+        for (let a = 0; a < arr1.length; a++) {
+            arr2[a] += arr1[a]
+        }
+    }
+    console.log(arr1, arr2);
+}
+add([1, 2, 3], [1, 2, 3, 4, 5, 6])*/
+
+// 20.12) classwork 3
+/*function duplicate(arr) {
+    let res = []
+    let obj = {}
+    for (const num of arr) {
+        obj[num] = obj[num] ? obj[num] + 1 : 1;
+        if (obj[num] == 2) res.push(num)
+    }
+    return res
+}
+console.log(duplicate([1, 2, 1, 2, 3, 5, 7]));*/
 
 
 
