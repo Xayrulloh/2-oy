@@ -633,9 +633,35 @@ add([1, 2, 3], [1, 2, 3, 4, 5, 6])*/
 }
 console.log(duplicate([1, 2, 1, 2, 3, 5, 7]));*/
 
+// 20.12) classwork 4
+/*function sortbyId(arr) {
+    return arr.sort((a, b) => a['id'] - b['id'])
+}
+console.log(sortbyId([{id:12,name:'Adham'}, {id:2, name:'Xayrulloh'}]));*/
 
+// 20.12) classwork 5
+// solution 1 bad way to solve 
+/*const twoSum = (array, goal) => {
+    let mapOfNumbers = {};
+    let twoIndexes = [];
+  
+    for (let i = 0; i < array.length; i++) {
+      mapOfNumbers[array[i]] = i;
+    }
+    console.log(mapOfNumbers)
+    for (let i = 0; i < array.length; i++) {
+      let target = goal - array[i];
+      if (mapOfNumbers[target] && mapOfNumbers[target] !== i) {
+        twoIndexes.push(i);
+        twoIndexes.push(mapOfNumbers[target] );
+        return twoIndexes
+      }
+    }
+  
+    return [];
+  };*/
 
-
+  
 
 
 
