@@ -661,9 +661,64 @@ console.log(sortbyId([{id:12,name:'Adham'}, {id:2, name:'Xayrulloh'}]));*/
     return [];
   };*/
 
-  
+  // 20.12) homework 1
+  /*function longestCommonPrefix(arr) {
+    let str = ''
+    let solishtirish2 = arr[0]
+    let sum = 0
+    let check = true
+    for (let a = 0; a < arr[0].length; a++) {
+        for (let b = 0; b < arr.length; b++) {
+            if (solishtirish2[a] === arr[b][a]) {
+                sum++
+            }
+            if (solishtirish2[a] != arr[b][a]) {
+                check = false
+            }
+        }
+        if (check === false) return str
+        if (sum == arr.length) str += solishtirish2[a]
+        sum = 0
+    }
+    return str
+}
+console.log(longestCommonPrefix(["flower","flight", 'flow']));*/
 
+// 21.12) classwork 1
+/*function pick(arr) {
+    if (arr[0] >= arr[1]) return arr[0]
+    for (let a = 1; a < arr.length - 1; a++) {
+        if (arr[a] >= arr[a -1] && arr[a] >= arr[a + 1]) return arr[a]
+    }
+    if (arr[arr.length-1] >= arr[arr.length - 2]) return arr[arr.length - 1]
+    return false
+}
+console.log(pick([5, 5, 5]));*/
 
+// 21.12) classwork 2
+/*function bigandsmall(arr, kottasi, kichkinasi) {
+    arr = new Set(arr)
+    arr = Array.from(arr)
+    arr = arr.sort((a, b) => a - b)
+    console.log(`${kottasi} kottasi --> ${arr[arr.length - kottasi]} va ${kichkinasi} kichkinasi --> ${arr[kichkinasi]}`);
+}
+console.log(bigandsmall([7, 10, 4, 3, 2, 15], 3, 5));*/
+
+// 21.12) classwork 3
+/*function isEqual(arr, num) {
+    let sum = 0
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = a; b < arr.length; b++) {
+            sum += arr[b]
+            if (sum === num) {
+                return [a, b]
+            }
+            if (sum > num) break
+        }
+        sum = 0
+    }
+}
+console.log(isEqual([135, 101, 170, 125, 79, 159, 163, 65, 106, 146, 82, 28, 162, 92, 196, 143, 28, 37, 192, 5, 103, 154, 93, 183, 22, 117, 119, 96, 48, 127, 172, 139, 70, 113, 68, 100, 36, 95, 104, 12, 123, 134], 468));*/
 
 
 
