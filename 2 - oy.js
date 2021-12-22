@@ -736,6 +736,27 @@ console.log(sort([1, -1, 3, 2, -7, -5, 11, 6]));*/
 /*let unique = (arr1, arr2) => {arr1 = arr1.concat(arr2); arr1 = new Set(arr1); return Array.from(arr1).length}
 console.log(unique([85, 25, 1, 32, 54, 6], [85, 2]));*/
 
+// 21.12) classwork 6
+/*function aylantir(arr, num1) {
+    while (num1 > arr.length) {
+        num1 = num1 - arr.length
+    }
+    let half1 = arr.splice(num1, arr.length)
+    let half2 = arr.splice(0, num1)
+    return half1.concat(half2)
+}
+console.log(aylantir([1, 2, 3, 4, 5], 10));*/
+
+// 21.12) classwork 7
+// 1 solution
+/*function deleted(arr) {
+    arr = arr.sort((a, b) => a - b)
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] + 1 != arr[a + 1]) return arr[a] + 1
+    }
+}*/
+
+
 
 
 
