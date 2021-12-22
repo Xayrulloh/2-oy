@@ -776,8 +776,23 @@ console.log(deleted([6, 1, 2, 8, 3, 4, 7, 10, 5]));*/
 }
 console.log(para([1, 1, 1, 1], 2));*/
 
+// 21.12) homework 1 
+/*let uniqueSort = (arr) => Array.from(new Set(arr.sort((a, b) => a - b)))
+console.log(uniqueSort([1, 2, 4, 3]));
+console.log(uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]));
+console.log(uniqueSort([6, 7, 3, 2, 1]));*/
 
+// 21.12) homework 2
+/*let findNaN = (arr) => arr.findIndex(Number.isNaN)
+console.log(findNaN([1, 2, NaN]));
+console.log(findNaN([NaN, 1, 2, 3, 4]));
+console.log(findNaN([0, 1, 2, 3, 4]));*/
 
+// 21.12) homework 3
+/*let reverseArr = (arr) => {arr = arr.toString().split('').sort((a, b) => Number(a) - Number(b)); let result = []; for (let a = arr.length - 1; a >= 0; a--) {result.push(+arr[a])} return result}
+console.log(reverseArr(1485979));
+console.log(reverseArr(623478));
+console.log(reverseArr(12345));*/
 
 
 
