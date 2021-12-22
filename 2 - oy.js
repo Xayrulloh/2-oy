@@ -756,7 +756,25 @@ console.log(aylantir([1, 2, 3, 4, 5], 10));*/
     }
 }*/
 
+// 2 solution
+/*function deleted(arr) {
+    for (let a = 0; a < arr.length; a++) {
+        if (!arr.includes(arr[a] + 1)) return arr[a] + 1
+    }
+}
+console.log(deleted([6, 1, 2, 8, 3, 4, 7, 10, 5]));*/
 
+// 21.12) classwork 8
+/*function para(arr, num) {
+    let res = []
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = a + 1; b < arr.length; b++) {
+            if (arr[a] + arr[b] === num) res.push([arr[a], arr[b]])
+        }
+    }
+    return res.length
+}
+console.log(para([1, 1, 1, 1], 2));*/
 
 
 
