@@ -720,6 +720,25 @@ console.log(bigandsmall([7, 10, 4, 3, 2, 15], 3, 5));*/
 }
 console.log(isEqual([135, 101, 170, 125, 79, 159, 163, 65, 106, 146, 82, 28, 162, 92, 196, 143, 28, 37, 192, 5, 103, 154, 93, 183, 22, 117, 119, 96, 48, 127, 172, 139, 70, 113, 68, 100, 36, 95, 104, 12, 123, 134], 468));*/
 
+// 21.12) classwork 4
+/*function sort(arr) {
+    let manfiy = []
+    let musbat = []
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] < 0) manfiy.push(arr[a])
+        else musbat.push(arr[a])
+    }
+    return manfiy.concat(musbat)
+}
+console.log(sort([1, -1, 3, 2, -7, -5, 11, 6]));*/
+
+// 21.12) classwork 5
+/*let unique = (arr1, arr2) => {arr1 = arr1.concat(arr2); arr1 = new Set(arr1); return Array.from(arr1).length}
+console.log(unique([85, 25, 1, 32, 54, 6], [85, 2]));*/
+
+
+
+
 
 
 
