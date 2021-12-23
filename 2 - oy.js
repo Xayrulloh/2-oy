@@ -684,7 +684,7 @@ console.log(sortbyId([{id:12,name:'Adham'}, {id:2, name:'Xayrulloh'}]));*/
 }
 console.log(longestCommonPrefix(["flower","flight", 'flow']));*/
 
-// 21.12) classwork 1
+// 22.12) classwork 1
 /*function pick(arr) {
     if (arr[0] >= arr[1]) return arr[0]
     for (let a = 1; a < arr.length - 1; a++) {
@@ -695,7 +695,7 @@ console.log(longestCommonPrefix(["flower","flight", 'flow']));*/
 }
 console.log(pick([5, 5, 5]));*/
 
-// 21.12) classwork 2
+// 22.12) classwork 2
 /*function bigandsmall(arr, kottasi, kichkinasi) {
     arr = new Set(arr)
     arr = Array.from(arr)
@@ -704,7 +704,7 @@ console.log(pick([5, 5, 5]));*/
 }
 console.log(bigandsmall([7, 10, 4, 3, 2, 15], 3, 5));*/
 
-// 21.12) classwork 3
+// 22.12) classwork 3
 /*function isEqual(arr, num) {
     let sum = 0
     for (let a = 0; a < arr.length; a++) {
@@ -720,7 +720,7 @@ console.log(bigandsmall([7, 10, 4, 3, 2, 15], 3, 5));*/
 }
 console.log(isEqual([135, 101, 170, 125, 79, 159, 163, 65, 106, 146, 82, 28, 162, 92, 196, 143, 28, 37, 192, 5, 103, 154, 93, 183, 22, 117, 119, 96, 48, 127, 172, 139, 70, 113, 68, 100, 36, 95, 104, 12, 123, 134], 468));*/
 
-// 21.12) classwork 4
+// 22.12) classwork 4
 /*function sort(arr) {
     let manfiy = []
     let musbat = []
@@ -732,22 +732,15 @@ console.log(isEqual([135, 101, 170, 125, 79, 159, 163, 65, 106, 146, 82, 28, 162
 }
 console.log(sort([1, -1, 3, 2, -7, -5, 11, 6]));*/
 
-// 21.12) classwork 5
+// 22.12) classwork 5
 /*let unique = (arr1, arr2) => {arr1 = arr1.concat(arr2); arr1 = new Set(arr1); return Array.from(arr1).length}
 console.log(unique([85, 25, 1, 32, 54, 6], [85, 2]));*/
 
-// 21.12) classwork 6
-/*function aylantir(arr, num1) {
-    while (num1 > arr.length) {
-        num1 = num1 - arr.length
-    }
-    let half1 = arr.splice(num1, arr.length)
-    let half2 = arr.splice(0, num1)
-    return half1.concat(half2)
-}
-console.log(aylantir([1, 2, 3, 4, 5], 10));*/
+// 22.12) classwork 6
+/*let oclock = (arr, num) => {if (num > arr.length) num %= arr.length; return arr.splice(arr.length - num).concat(arr)}
+console.log(oclock([1, 2, 3, 4, 5, 6, 7], 2));*/
 
-// 21.12) classwork 7
+// 22.12) classwork 7
 // 1 solution
 /*function deleted(arr) {
     arr = arr.sort((a, b) => a - b)
@@ -764,7 +757,7 @@ console.log(aylantir([1, 2, 3, 4, 5], 10));*/
 }
 console.log(deleted([6, 1, 2, 8, 3, 4, 7, 10, 5]));*/
 
-// 21.12) classwork 8
+// 22.12) classwork 8
 /*function para(arr, num) {
     let res = []
     for (let a = 0; a < arr.length; a++) {
@@ -776,27 +769,48 @@ console.log(deleted([6, 1, 2, 8, 3, 4, 7, 10, 5]));*/
 }
 console.log(para([1, 1, 1, 1], 2));*/
 
-// 21.12) homework 1 
+// 22.12) homework 1 
 /*let uniqueSort = (arr) => Array.from(new Set(arr.sort((a, b) => a - b)))
 console.log(uniqueSort([1, 2, 4, 3]));
 console.log(uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]));
 console.log(uniqueSort([6, 7, 3, 2, 1]));*/
 
-// 21.12) homework 2
+// 22.12) homework 2
 /*let findNaN = (arr) => arr.findIndex(Number.isNaN)
 console.log(findNaN([1, 2, NaN]));
 console.log(findNaN([NaN, 1, 2, 3, 4]));
 console.log(findNaN([0, 1, 2, 3, 4]));*/
 
-// 21.12) homework 3
-/*let reverseArr = (arr) => {arr = arr.toString().split('').sort((a, b) => Number(a) - Number(b)); let result = []; for (let a = arr.length - 1; a >= 0; a--) {result.push(+arr[a])} return result}
+// 22.12) homework 3
+/*let reverseArr = (arr) => {arr = arr.toString().split('').sort(); let result = []; for (let a = arr.length - 1; a >= 0; a--) {result.push(+arr[a])} return result}
 console.log(reverseArr(1485979));
 console.log(reverseArr(623478));
 console.log(reverseArr(12345));*/
 
+// 23.12) classwork 1 
+/*let data = [
+    {income:500, expanse : 200},
+    {income:400, expanse : 100},
+    {income:150, expanse : 145},
+    {income:230, expanse : 320}
+]
+let finance = (arr, str) => arr.reduce((a, b) => {if (str === 'total') {a += b.income - b.expanse; return a}; a += b[str]; return a}, 0)
+console.log(finance(data, 'income'));*/
 
-
-
+// 23.12) homework 1 
+/*Array.prototype.myOwnSort = function() {
+    let item = 0
+    for (let a = 0; a < this.length; a++) {
+        for (let b = 0; b < this.length; b++)
+            if (this[a] < this[b]) {
+                item = this[a]
+                this[a] = this[b]
+                this[b] = item 
+            }
+    }
+    return this
+}
+console.log([9, 8, 7, 4, 5, 6, 3, 10, 2, 1].myOwnSort())*/
 
 
 
