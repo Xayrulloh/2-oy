@@ -812,6 +812,22 @@ console.log(finance(data, 'income'));*/
 }
 console.log([9, 8, 7, 4, 5, 6, 3, 10, 2, 1].myOwnSort())*/
 
+// 23.12) homework 2
+/*Array.prototype.myOwnFilter = function(callback) {
+    const filterArr = []
+    for (let a = 0; a < this.length; a++) {
+        let res = callback(this[a], a, this)
+        if (res) filterArr.push(this[a])
+    }
+    return filterArr
+}
+let res = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].myOwnFilter((num) => num >= 5)
+console.log(res);*/
+
+
+
+
+
 
 
 
