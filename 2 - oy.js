@@ -860,6 +860,27 @@ deepStrictEqual(binarysearch([1, 2, 3, 4, 5, 6, 7], 5), 3);*/
 }
 deepStrictEqual(binary([1, 2, 3, 4, 5, 6, 7], 5), 4)*/
 
+// 23.12) homework 1
+/*function merge(left, right) {
+    let arr = [] 
+    while (left.length && right.length) {
+        if (left[0] < right[0]) {
+            arr.push(left.shift())  
+        } else {
+            arr.push(right.shift()) 
+        }
+    }
+    return [ ...arr, ...left, ...right ]
+}
+function mergeSort(array) {
+    const half = array.length / 2  // [4, 8, 7, 2, 11, 1, 3] ni ortasini ovolams 1 oceredda
+    if(array.length < 2) return array // recoursionni tugatish cun kere
+    const left = array.splice(0, half) // chap tomondigi yarmini ovolams half bilan yani [4, 8, 7, 2] ni
+    return merge(mergeSort(left),mergeSort(array))  // funksiyani caqrib recoursion yasadik va unga chap va on tomonlani berdik
+}
+let array = [4, 8, 7, 2, 11, 1, 3];
+console.log(mergeSort(array));*/
+
 
 
 
