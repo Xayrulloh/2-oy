@@ -7,6 +7,7 @@ Array.prototype.sum = function() {
     }
     return res
 }
+const {deepStrictEqual} = require('assert')
 
 // 18.12) practice 3
 /*Array.prototype.mypush = function(a) {
@@ -823,6 +824,144 @@ console.log([9, 8, 7, 4, 5, 6, 3, 10, 2, 1].myOwnSort())*/
 }
 let res = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].myOwnFilter((num) => num >= 5)
 console.log(res);*/
+
+// 23.12) classwork 1
+/*function what(name='Xayrulloh') {return name}*/
+
+// 23.12) classwork 2
+// let defultCompare = (a, b) => a > b ? 1 : (a < b ? -1 : 0)
+/*function binarysearch(array, element, compare = defultCompare) {
+    let left = 0
+    let right = array.length - 1
+    while(left <= right) {
+        let middle = (right + left) / 2 | 0
+        switch(compare(element, array[middle])) {
+            case -1: {
+                right = middle - 1
+            }
+            case 1: {
+                left = middle + 1
+            }
+            default: {
+                return middle
+            }
+        }
+    }
+    return -1
+}
+deepStrictEqual(binarysearch([1, 2, 3, 4, 5, 6, 7], 5), 3);*/
+
+// 23.12) classwork 3
+/*function binary(array, element, compare = defultCompare, left = 0, right = array.length - 1) {
+    if (left > right) return -1
+    const middle = (right + left) / 2 | 0
+    const comparision = compare(element, array[middle])
+    return comparision === -1 ? binary(array, element, compare, left, middle - 1) : comparision === 1 ? binary(array, element, compare, middle + 1, right) : middle
+}
+deepStrictEqual(binary([1, 2, 3, 4, 5, 6, 7], 5), 4)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
