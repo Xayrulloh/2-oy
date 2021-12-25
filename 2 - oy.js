@@ -881,6 +881,38 @@ function mergeSort(array) {
 let array = [4, 8, 7, 2, 11, 1, 3];
 console.log(mergeSort(array));*/
 
+// 25.12) classwork 1
+/*function merge(arr) {
+    if (arr.length < 2) return arr
+    arr.sort((a, b) => a[0] - b[0])
+    let result = []
+    let simple = arr[0]
+    for (let a = 1; a < arr.length; a++) {
+        if (simple[1] >= arr[a][0]) {
+            simple = [simple[0], Math.max(simple[1], arr[a][1])]
+        }
+        else {
+            result.push(simple)
+            simple = arr[a]
+        }
+    }
+    result.push(simple)
+    return result
+}
+console.log(merge([[1, 4], [0, 0]]));*/
+
+// 25.12) classwork 2
+/*function addSpaces(str, num) {
+    let res = str.slice(0, num[0])
+    for (let a = 1; a < num.length; a++) {
+        res += ' ' + str.slice(num[a - 1], num[a])
+    }
+    return res += ' ' + str.slice(num[num.length - 1])
+}
+console.log(addSpaces("LeetcodeHelpsMeLearn", [8,13,15]));*/
+
+// 25.12) classwork 3
+
 
 
 
