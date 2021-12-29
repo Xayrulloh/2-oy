@@ -911,9 +911,26 @@ console.log(merge([[1, 4], [0, 0]]));*/
 }
 console.log(addSpaces("LeetcodeHelpsMeLearn", [8,13,15]));*/
 
-// 25.12) classwork 3
+// Find Common Characters
+/*function commonChars(arr) {
+    let res = []
+    let first = arr[0]
+    for (let a = 0; a < first.length; a++) {
+        let count = 0
+        for (let b = 1; b < arr.length; b++) {
+            if (arr[b].includes(first[a])) {
+                count++
+                arr[b] = arr[b].slice(0, arr[b].indexOf(first[a])) + arr[b].slice(arr[b].indexOf(first[a]) + 1)
+            }
+        }
+        console.log(arr);
+        if (count === arr.length - 1) res.push(first[a])
+    }
+    return res
+}
+console.log(commonChars(["cool","lock","cook"]));*/
 
-
+// 
 
 
 
