@@ -911,27 +911,30 @@ console.log(merge([[1, 4], [0, 0]]));*/
 }
 console.log(addSpaces("LeetcodeHelpsMeLearn", [8,13,15]));*/
 
-// Find Common Characters
-/*function commonChars(arr) {
-    let res = []
-    let first = arr[0]
-    for (let a = 0; a < first.length; a++) {
-        let count = 0
-        for (let b = 1; b < arr.length; b++) {
-            if (arr[b].includes(first[a])) {
-                count++
-                arr[b] = arr[b].slice(0, arr[b].indexOf(first[a])) + arr[b].slice(arr[b].indexOf(first[a]) + 1)
-            }
-        }
-        console.log(arr);
-        if (count === arr.length - 1) res.push(first[a])
+// rest
+// lineary search
+/*function linearsearch(arr, el) {
+    let count = 0
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] === el) return a
+        count++
     }
-    return res
+    return -1
 }
-console.log(commonChars(["cool","lock","cook"]));*/
+console.log(linearsearch([7, 10, 9, 8, 6, 5, 4,3,2, 1, 11, 15, 0], 11));*/
 
-// 
 
+// Binary search
+/*function binarysearch(arr, el) {
+    let start = 0, end = arr.length - 1, middle = (start + end) / 2 | 0
+    while (arr[middle] !== el && start <= end) {
+        if (arr[middle] < el) start = middle + 1
+        else end = middle - 1
+        middle = (start + end) / 2 | 0
+    }
+    return arr[middle] === el ? middle : -1
+}
+console.log(binarysearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 10));*/
 
 
 
