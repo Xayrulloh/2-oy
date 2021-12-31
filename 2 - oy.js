@@ -936,18 +936,22 @@ console.log(linearsearch([7, 10, 9, 8, 6, 5, 4,3,2, 1, 11, 15, 0], 11));*/
 }
 console.log(binarysearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 10));*/
 
-
-
-
-
-
-
-
-
-
-
-
-
+// merge sort
+/*function sochish(arr) {
+    let middle = arr.length / 2 | 0
+    if (arr.length < 2) return arr
+    let left = arr.splice(0, middle), right = arr
+    return sortlabYegish(sochish(left), sochish(right))
+}
+function sortlabYegish(left, right) {
+    let res = []
+    while (left.length && right.length) {
+        if (left[0] < right[0]) res.push(left.shift())
+        else res.push(right.shift())
+    }
+    return [...res, ...left, ...right]
+}
+console.log(sochish([2, -4, 7, 3, 9, 12, 0]));*/
 
 
 
