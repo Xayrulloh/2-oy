@@ -955,6 +955,24 @@ console.log(sochish([2, -4, 7, 3, 9, 12, 0]));*/
 
 
 
+// 01.03) homework 1
+/*let isOdd = num => (num & 1) != 1 ? 'No' : 'Yes'
+console.log(isOdd(3));
+console.log(isOdd(58) + '\n' + '------------------');
+let isEven = str => {let reg = new RegExp('^\d*[13579]$'); return reg.test(str[str.length - 1]) ? 'No' : 'Yes'}
+console.log(isEven('11'));
+console.log(isEven('44'));*/
+
+// 01.03) homework 2
+/*let reversedBinaryInteger = num => parseInt(num.toString(2).split('').reverse().join(''), 2)
+console.log(reversedBinaryInteger(10));
+console.log(reversedBinaryInteger(12));
+console.log(reversedBinaryInteger(25));
+console.log(reversedBinaryInteger(45));*/
+
+
+
+
 
 
 
